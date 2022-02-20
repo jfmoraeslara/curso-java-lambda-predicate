@@ -17,7 +17,7 @@ public class Program {
 		list.add(new Product("HD Case", 80.90));
 		
 		//Nome da classe :: e o nome método
-		list.removeIf(Product::staticProductPredicate);
+		list.removeIf(Product::nonStaticProductPredicate);
 		
 		for (Product p : list) {
 			System.out.println(p);
